@@ -1,0 +1,933 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#"
+     xml:base="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Hetro="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment/"
+     xmlns:OntologyAlignment="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#"
+     xmlns:CardiovascularDiseaseOntology="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment">
+        <owl:imports rdf:resource="http://www.owl-ontologies.com/Ontology1697789589.owl"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#attendingPatient_Role -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#attendingPatient_Role">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient_Role"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#has_Risk_Factors_Indicators -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#has_Risk_Factors_Indicators">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient_Role"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#belongs_To -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#belongs_To">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1697789589.owl#patient_history"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient_Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#check_MedicalHistory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#check_MedicalHistory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Role"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1697789589.owl#patient_history"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#examine_Cardiac_Diseases -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#examine_Cardiac_Diseases">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Cardiovascular_Diseases"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#examine_Sign_Symptoms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#examine_Sign_Symptoms">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Role"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Signs_and_Symptoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#isServerdTo_Person -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#isServerdTo_Person">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1697789589.owl#medications"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Person_Profile"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#patientAttendedBy_Role -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#patientAttendedBy_Role">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Person_Profile"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#prescribeMedicine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#prescribeMedicine">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Role"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/Ontology1697789589.owl#medications"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#recommend_BloodTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#recommend_BloodTest">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#recommend_MedicalTest"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#recommend_MedicalTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#recommend_MedicalTest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#recommend_PhysicalTest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#recommend_PhysicalTest">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#recommend_MedicalTest"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1697789589.owl#medications -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1697789589.owl#medications"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1697789589.owl#patient_history -->
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/Ontology1697789589.owl#patient_history"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Cardiovascular_Diseases -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Cardiovascular_Diseases">
+        <rdfs:comment>Cardiovascular diseases (CVDs) are the leading cause of death globally, taking an estimated 17.9 million lives each year. CVDs are a group of disorders of the heart and blood vessels and include coronary heart disease, cerebrovascular disease, rheumatic heart disease and other conditions.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/medications_Instance_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/medications_Instance_1">
+        <isServerdTo_Person rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Person1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.owl-ontologies.com/patient_history_Instance_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.owl-ontologies.com/patient_history_Instance_1">
+        <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1697789589.owl#patient_history"/>
+        <belongs_To rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Body_Mass_Index_BMI-1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Body_Mass_Index_BMI-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Depression_and_Traumatic_Stress_Yes_OR_No -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Depression_and_Traumatic_Stress_Yes_OR_No">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Diabetes_Type-I -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Diabetes_Type-I">
+        <rdfs:comment>Type 1 diabetes, formerly known as juvenile diabetes, is an autoimmune disease that originates when cells that make insulin are destroyed by the immune system. Insulin is a hormone required for the cells to use blood sugar for energy and it helps regulate glucose levels in the bloodstream.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Excessive_Alcohol_Consumption-Yes_or_No -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Excessive_Alcohol_Consumption-Yes_or_No">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Family_History_of_CVD-Yes_or_NO -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Family_History_of_CVD-Yes_or_NO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Genetic_Predisposition_Yes_or_No -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Genetic_Predisposition_Yes_or_No">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Medical_Consultant -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Medical_Consultant">
+        <examine_Cardiac_Diseases rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Arrhythmia1"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Medical_Consultant1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Medical_Consultant1">
+        <prescribeMedicine rdf:resource="http://www.owl-ontologies.com/medications_Instance_1"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Non-alcohoolic_Fatty_Liver_Disease_Yes_or_No -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Non-alcohoolic_Fatty_Liver_Disease_Yes_or_No">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Obesity_Yes_or_No -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Obesity_Yes_or_No">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient_Role"/>
+        <CardiovascularDiseaseOntology:attendingPatient_Role rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Triage_Nurse1"/>
+        <CardiovascularDiseaseOntology:has_Age rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#45_Years"/>
+        <CardiovascularDiseaseOntology:has_Air_Polution rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Particle_Polution_[value_Ranged_less_than_PM_2.5µm_or_PM-2.5]"/>
+        <CardiovascularDiseaseOntology:has_Depression_and_Traumatic_Stress rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Depression_and_Traumatic_Stress_Yes_OR_No"/>
+        <CardiovascularDiseaseOntology:has_Diabetes_Mellitus rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Yes-Diabetic-Type-1"/>
+        <CardiovascularDiseaseOntology:has_Elevated_Blood_Pressure rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Elevated_Blood_Pressure_[Upper_number_Ranged_between_120-129]_AND_[Lower_number_less_than_80]"/>
+        <CardiovascularDiseaseOntology:has_Excessive_Alcohol_Consumption rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Excessive_Alcohol_Consumption-Yes_or_No"/>
+        <CardiovascularDiseaseOntology:has_Family_History_of_CVD rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Family_History_of_CVD-Yes_or_NO"/>
+        <CardiovascularDiseaseOntology:has_Gender_or_Sex rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Female=0"/>
+        <CardiovascularDiseaseOntology:has_Gender_or_Sex rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Male=1"/>
+        <CardiovascularDiseaseOntology:has_Genetic_Predisposition rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Genetic_Predisposition_Yes_or_No"/>
+        <CardiovascularDiseaseOntology:has_HDL_Cholesterol-Desireable rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol_Ranged_[Value_number_60_mg/dL_[1.6mmol/L_or_above]]_for_Men"/>
+        <CardiovascularDiseaseOntology:has_HDL_Cholesterol-Desireable rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol_Ranged_[Value_number_60_mg/dL_[1.6mmol/L_or_above]]_for_Women"/>
+        <CardiovascularDiseaseOntology:has_HDL_Cholesterol_At_Risk rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol_Ranged_[Value_number_Less_than_40mg/dl_[1.0_mmol/L]]"/>
+        <CardiovascularDiseaseOntology:has_High_Blood_Pressure-HyperTension_Stage-1 rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#High_Blood_Pressure_Stage-1_[Upper_number_Ranged_[130-139]_AND_[Lower_number_Ranged_[80-89]]"/>
+        <CardiovascularDiseaseOntology:has_High_Blood_Pressure-HyperTension_Stage-2 rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#High_Blood_Pressure_Stage-2_[Upper_number_Ranged_[140_or_Higher]_OR_[Lower_number_Ranged_[90_or_Higher]]"/>
+        <CardiovascularDiseaseOntology:has_Hypertensive_Crisis rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Hypertensive_Crisis_[Upper_number_Ranged_Higher_than_180]_AND/OR_[Lower_number_Higher_than_120]"/>
+        <CardiovascularDiseaseOntology:has_Non-alcohoolic_Fatty_Liver_Disease rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Non-alcohoolic_Fatty_Liver_Disease_Yes_or_No"/>
+        <CardiovascularDiseaseOntology:has_Normal_Blood_Pressure rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Normal_Blood_Pressure_[Upper_number_less_than_120]_AND_[Lower_number_less_than_80]"/>
+        <CardiovascularDiseaseOntology:has_Obesity rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Obesity_Yes_or_No"/>
+        <CardiovascularDiseaseOntology:has_Patient_Body_Weight rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#70_Kg"/>
+        <CardiovascularDiseaseOntology:has_Patient_Height rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#169_cm"/>
+        <CardiovascularDiseaseOntology:has_Physical_Inactivity rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Physical_Inactivity_Yes_or_No"/>
+        <CardiovascularDiseaseOntology:has_Poor_Sleep rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Poor_Sleep_Yes_or_No"/>
+        <CardiovascularDiseaseOntology:has_Psychosocial_Factors rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Psychosocial_Factors_Yes_or_No"/>
+        <CardiovascularDiseaseOntology:has_Race_and_Ethnicity rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Race_and_Ethnicity_Asian,_European,_African,_United_States_and_Canadian"/>
+        <CardiovascularDiseaseOntology:has_Tobocco_Usage rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Tobocco_Usage_Yes_or_No"/>
+        <CardiovascularDiseaseOntology:has_Unhealthy_Diet rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Unhealthy_Diet_Yes"/>
+        <CardiovascularDiseaseOntology:has_eGFR-Stage-1 rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#eGFR-[Value_=_90_or_Higher]-Normal_Range"/>
+        <CardiovascularDiseaseOntology:has_eGFR-Stage-2 rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#eGFR-2_[Value_Range_between_[60-89]]-_Mild_Loss_of_Kindney_Function"/>
+        <CardiovascularDiseaseOntology:has_eGFR-Stage-3 rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#eGFR-[Value_Ranged_[45-59]]-Moderate_Kidney_fucntion"/>
+        <CardiovascularDiseaseOntology:TestDate>42716</CardiovascularDiseaseOntology:TestDate>
+        <CardiovascularDiseaseOntology:Units>mmhg</CardiovascularDiseaseOntology:Units>
+        <CardiovascularDiseaseOntology:hasDiastolic_DBP>79</CardiovascularDiseaseOntology:hasDiastolic_DBP>
+        <CardiovascularDiseaseOntology:hasPatient_ID>19780520-XXXX</CardiovascularDiseaseOntology:hasPatient_ID>
+        <CardiovascularDiseaseOntology:hasSystolic_SBP>118</CardiovascularDiseaseOntology:hasSystolic_SBP>
+        <rdfs:comment>Patient who is getting medication from the clincians.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient_Role"/>
+        <CardiovascularDiseaseOntology:attendingPatient_Role rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Head_Nurse"/>
+        <CardiovascularDiseaseOntology:TestDate>14-4-2017</CardiovascularDiseaseOntology:TestDate>
+        <CardiovascularDiseaseOntology:Units>mmHg</CardiovascularDiseaseOntology:Units>
+        <CardiovascularDiseaseOntology:hasDiastolic_DBP>85</CardiovascularDiseaseOntology:hasDiastolic_DBP>
+        <CardiovascularDiseaseOntology:hasPatient_ID>19910131-BBBB</CardiovascularDiseaseOntology:hasPatient_ID>
+        <CardiovascularDiseaseOntology:hasSystolic_SBP>124</CardiovascularDiseaseOntology:hasSystolic_SBP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient_Role"/>
+        <CardiovascularDiseaseOntology:attendingPatient_Role rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Medical_Consultant"/>
+        <CardiovascularDiseaseOntology:attendingPatient_Role rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Senior_Practitioner1"/>
+        <CardiovascularDiseaseOntology:attendingPatient_Role rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Triage_Nurse1"/>
+        <CardiovascularDiseaseOntology:TestDate>15-10-2017</CardiovascularDiseaseOntology:TestDate>
+        <CardiovascularDiseaseOntology:TestDate>18-10-2017</CardiovascularDiseaseOntology:TestDate>
+        <CardiovascularDiseaseOntology:TestDate>22-11-2017</CardiovascularDiseaseOntology:TestDate>
+        <CardiovascularDiseaseOntology:Units>mmHg</CardiovascularDiseaseOntology:Units>
+        <CardiovascularDiseaseOntology:hasDiastolic_DBP>56</CardiovascularDiseaseOntology:hasDiastolic_DBP>
+        <CardiovascularDiseaseOntology:hasDiastolic_DBP>76</CardiovascularDiseaseOntology:hasDiastolic_DBP>
+        <CardiovascularDiseaseOntology:hasDiastolic_DBP>86</CardiovascularDiseaseOntology:hasDiastolic_DBP>
+        <CardiovascularDiseaseOntology:hasPatient_ID>19780520-ZZZZ</CardiovascularDiseaseOntology:hasPatient_ID>
+        <CardiovascularDiseaseOntology:hasSystolic_SBP>126</CardiovascularDiseaseOntology:hasSystolic_SBP>
+        <CardiovascularDiseaseOntology:hasSystolic_SBP>144</CardiovascularDiseaseOntology:hasSystolic_SBP>
+        <CardiovascularDiseaseOntology:hasSystolic_SBP>150</CardiovascularDiseaseOntology:hasSystolic_SBP>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Person1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Person1">
+        <patientAttendedBy_Role rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Triage_Nurse1"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Physical_Inactivity_Yes_or_No -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Physical_Inactivity_Yes_or_No">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Poor_Sleep_Yes_or_No -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Poor_Sleep_Yes_or_No">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Psychosocial_Factors_Yes_or_No -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Psychosocial_Factors_Yes_or_No">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Senior_Practitioner1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Senior_Practitioner1">
+        <examine_Cardiac_Diseases rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Arrhythmia1"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Tobocco_Usage_Yes_or_No -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Tobocco_Usage_Yes_or_No">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Triage_Nurse1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Triage_Nurse1">
+        <CardiovascularDiseaseOntology:attendingPatient_Role rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Person1"/>
+        <check_MedicalHistory rdf:resource="http://www.owl-ontologies.com/patient_history_Instance_1"/>
+        <examine_Cardiac_Diseases rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Heart_Attack1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Anemia1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Angina1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Anxiety_Disorders1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Back_Pain1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Blurred_Vision1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Cardiac_Tamponande1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Chest_Pain1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Depression1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Diabetes_Type-I"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Diabetes_Type_II"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Dysphagia1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Esophageal_Rupture1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Feeling_Dizzy1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Headache1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Lack_of_Appetite1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Muscle_or_Skeltal_Pain1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Nausea1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Nose_Bleed1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Odynophagia1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Pneumonia1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Pulmonary_Embolism1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Respiratory_Distress1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Shingles1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Shortness_of_Breath1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Swollen_Limbs1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Tension_Pneumothorax1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Thoracic_Aortic_Dissection1"/>
+        <examine_Sign_Symptoms rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Weight_Gain1"/>
+        <prescribeMedicine rdf:resource="http://www.owl-ontologies.com/medications_Instance_1"/>
+        <recommend_BloodTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Complete_Blood_Count_Test1"/>
+        <recommend_BloodTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Creatine_Kinase_Test1"/>
+        <recommend_BloodTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#D-dimer_Test1"/>
+        <recommend_BloodTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Electrolytes_Test1"/>
+        <recommend_BloodTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Liver_Enzymes_Test1"/>
+        <recommend_BloodTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Serum_Lipase_Test1"/>
+        <recommend_BloodTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Troponin_I_or_T_Test1"/>
+        <recommend_PhysicalTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Acute_Coronary_Syndrome_Exam1"/>
+        <recommend_PhysicalTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#CT_Pulmonary_Angiogram_Exam1"/>
+        <recommend_PhysicalTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#CT_Scanning_Exam1"/>
+        <recommend_PhysicalTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Chest_Radiograph_Exam1"/>
+        <recommend_PhysicalTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Chest_X-ray_Exam1"/>
+        <recommend_PhysicalTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Diaphoresis_Exam1"/>
+        <recommend_PhysicalTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Echocardiography_Exam1"/>
+        <recommend_PhysicalTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Electrocardiogram_Exam1"/>
+        <recommend_PhysicalTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Hypotension_Exam1"/>
+        <recommend_PhysicalTest rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#MRI_Scanning_Exam1"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Yes-Diabetic-Type-1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Yes-Diabetic-Type-1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#169_cm -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#169_cm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Patient_Height"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#45_Years -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#45_Years">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#70_Kg -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#70_Kg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Elevated_Blood_Pressure_[Upper_number_Ranged_between_120-129]_AND_[Lower_number_less_than_80] -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Elevated_Blood_Pressure_[Upper_number_Ranged_between_120-129]_AND_[Lower_number_less_than_80]">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Blood_Pressure_Category"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Female=0 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Female=0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol_Ranged_[Value_number_60_mg/dL_[1.6mmol/L_or_above]]_for_Men -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol_Ranged_[Value_number_60_mg/dL_[1.6mmol/L_or_above]]_for_Men">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol_Ranged_[Value_number_60_mg/dL_[1.6mmol/L_or_above]]_for_Women -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol_Ranged_[Value_number_60_mg/dL_[1.6mmol/L_or_above]]_for_Women">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol_Ranged_[Value_number_Less_than_40mg/dl_[1.0_mmol/L]] -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol_Ranged_[Value_number_Less_than_40mg/dl_[1.0_mmol/L]]">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol_Ranged_[Value_number_less_than_50_mg/dl_[1.3_mmol/L]]_for_Women -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol_Ranged_[Value_number_less_than_50_mg/dl_[1.3_mmol/L]]_for_Women">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#HDL_Cholesterol"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#High_Blood_Pressure_Stage-1_[Upper_number_Ranged_[130-139]_AND_[Lower_number_Ranged_[80-89]] -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#High_Blood_Pressure_Stage-1_[Upper_number_Ranged_[130-139]_AND_[Lower_number_Ranged_[80-89]]">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Blood_Pressure_Category"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#High_Blood_Pressure_Stage-2_[Upper_number_Ranged_[140_or_Higher]_OR_[Lower_number_Ranged_[90_or_Higher]] -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#High_Blood_Pressure_Stage-2_[Upper_number_Ranged_[140_or_Higher]_OR_[Lower_number_Ranged_[90_or_Higher]]">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Blood_Pressure_Category"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Hypertensive_Crisis_[Upper_number_Ranged_Higher_than_180]_AND/OR_[Lower_number_Higher_than_120] -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Hypertensive_Crisis_[Upper_number_Ranged_Higher_than_180]_AND/OR_[Lower_number_Higher_than_120]">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Blood_Pressure_Category"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Male=1 -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Male=1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Normal_Blood_Pressure_[Upper_number_less_than_120]_AND_[Lower_number_less_than_80] -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Normal_Blood_Pressure_[Upper_number_less_than_120]_AND_[Lower_number_less_than_80]">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Blood_Pressure_Category"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Particle_Polution_[value_Ranged_less_than_PM_2.5µm_or_PM-2.5] -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Particle_Polution_[value_Ranged_less_than_PM_2.5µm_or_PM-2.5]">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Race_and_Ethnicity_Asian,_European,_African,_United_States_and_Canadian -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Race_and_Ethnicity_Asian,_European,_African,_United_States_and_Canadian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#eGFR-2_[Value_Range_between_[60-89]]-_Mild_Loss_of_Kindney_Function -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#eGFR-2_[Value_Range_between_[60-89]]-_Mild_Loss_of_Kindney_Function">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#eGFR-[Value_=_90_or_Higher]-Normal_Range -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#eGFR-[Value_=_90_or_Higher]-Normal_Range">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#eGFR-[Value_Ranged_[45-59]]-Moderate_Kidney_fucntion -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#eGFR-[Value_Ranged_[45-59]]-Moderate_Kidney_fucntion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Risk_Factors_Indicators"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#Chronic_Headache_and_Fatigue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#Chronic_Headache_and_Fatigue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#History_Of_Fever_and_Cough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/abid/ontologies/2023/9/OntologyAlignment#History_Of_Fever_and_Cough"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Acute_Coronary_Syndrome_Exam">
+        <rdfs:comment>The blockage is usually due to a blood clot and can be sudden and complete. If a clot forms due to a plaque rupture, a part of the clot may break away and clog one of the coronary arteries causing ACS. Though less common, spasms in the coronary artery may also limit blood flow. Regardless of the cause of the blockage, it’s damaging to the heart and a medical emergency.  
+
+What are the symptoms?
+Chest pain or discomfort may immediately signal that something’s wrong with your heart. But other symptoms may leave you unsure of what’s wrong. Take note of these common signs of an acute coronary syndrome:
+
+Chest pain or discomfort, which may involve pressure, tightness or fullness
+Pain or discomfort in one or both arms, the jaw, neck, back or stomach
+Shortness of breath
+Feeling dizzy or lightheaded
+Nausea
+Sweating
+Take these symptoms seriously. If you experience chest pain or other symptoms, don’t hesitate to call 911 immediately.
+
+Chest pain caused by acute coronary syndromes can come on suddenly, as is the case with a heart attack. Other times, the pain can be unpredictable or get worse even with rest – both hallmark symptoms of unstable angina. People who experience chronic chest pain resulting from decreased blood flow to the heart due to years of cholesterol buildup in their arteries can develop an acute coronary syndrome if a blood clot forms on top of the plaque buildup.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Anemia">
+        <rdfs:comment>Anemia is a problem of not having enough healthy red blood cells or hemoglobin to carry oxygen to the body&apos;s tissues. Hemoglobin is a protein found in red cells that carries oxygen from the lungs to all other organs in the body. Having anemia can cause tiredness, weakness and shortness of breath.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Angina">
+        <rdfs:comment>Angina is chest pain caused by reduced blood flow to the heart muscles. It&apos;s not usually life threatening, but it&apos;s a warning sign that you could be at risk of a heart attack or stroke.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Aortic_Aneurysms">
+        <rdfs:comment>Aortic aneurysms are balloon-like bulges that occur in the aorta, the main artery carrying oxygen-rich blood to your body. The aorta has thick walls that stand up to normal blood pressure. However, certain medical problems, genetic conditions, and trauma can damage or weaken these walls.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Arrhythmia">
+        <rdfs:comment>An arrhythmia, or irregular heartbeat, is a problem with the rate or rhythm of your heartbeat. Your heart may beat too quickly, too slowly, or with an irregular rhythm. It is normal for your heart rate to speed up during physical activity and to slow down while resting or sleeping.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Back_Pain">
+        <rdfs:comment>Back pain due to a heart attack may be present at the top of the back. Females are also more likely to experience pain in the shoulder, back, jaw, or arm during a heart attack. Additionally, dizziness, lightheadedness, or fainting may accompany back pain.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Blurred_Vision">
+        <rdfs:comment>Reduced blood supply also starves the eyes of oxygen, affecting vision. Visual disturbances, like blurred vision, that occurs alongside chest pain can be a sign of extremely high blood pressure (Source: Patient), heart attack or stroke; all medical emergencies that need urgent attention.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#CT_Pulmonary_Angiogram_Exam">
+        <rdfs:comment>A CT pulmonary angiogram (or CTPA) is a CT scan that looks for blood clots in the lungs (also known as pulmonary embolism or PE). A CT pulmonary angiogram takes pictures of the blood vessels that run from the heart to the lungs (the pulmonary arteries).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#CT_Scanning_Exam">
+        <rdfs:comment>A computed tomography scan is a medical imaging technique used to obtain detailed internal images of the body. The personnel that perform CT scans are called radiographers or radiology technologists.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Cardiac_Disease">
+        <rdfs:comment>Cardiovascular disease (CVD) is any disease involving the heart or blood vessels. CVDs constitute a class of diseases that includes: coronary artery diseases (e.g. angina, heart attack), heart failure, hypertensive heart disease, rheumatic heart disease, cardiomyopathy, arrhythmia, congenital heart disease, valvular heart disease, carditis, aortic aneurysms, peripheral artery disease, thromboembolic disease, and venous thrombosis.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Cardiac_Dysrythmias">
+        <rdfs:comment>A cardiac dysrhythmia (arrhythmia) is an abnormal or irregular heartbeat. If you have a dysrhythmia, your heart might beat too fast or too slowly. Or your heart&apos;s rhythm might be disrupted, leading you to feel like your heart skipped a beat.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Cardiac_Tamponande">
+        <rdfs:comment>Cardiac tamponade is a medical emergency that takes place when abnormal amounts of fluid accumulate in the pericardial sac compressing the heart and leading to a decrease in cardiac output and shock.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Cardiomyopathy">
+        <rdfs:comment>What is cardiomyopathy? Any disorder that affects the heart muscle is called a cardiomyopathy. Cardiomyopathy causes the heart to lose its ability to pump blood well. In some cases, the heart rhythm also becomes disturbed. This leads to arrhythmias (irregular heartbeats).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Carditis">
+        <rdfs:comment>Carditis, or inflammation of the heart, is most conveniently broken down into three categories: Pericarditis - Inflammation of the pericardium. Myocarditis - Inflammation of the heart muscle. Endocarditis - Inflammation of the endocardium. PERICARDITIS.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Castroesophageal_Reflux_Disease">
+        <rdfs:comment>GERD (gastroesophageal reflux disease) is a digestive disorder. It&apos;s caused when gastric acid from your stomach flows back up into your food pipe (esophagus).
+
+Heartburn is the most common symptom of GERD.</rdfs:comment>
+        <rdfs:comment>What causes GERD?
+GERD happens when gastric acid from your stomach backs up into your food pipe (esophagus).
+
+A muscle at the bottom of the esophagus opens to let food from the bottom of the esophagus into the stomach. And it closes to keep food in the stomach. This muscle is called the lower esophageal sphincter (LES). When your LES relaxes too often or for too long, acid backs up into your esophagus. This causes heartburn and may cause damage.
+
+Some lifestyle issues that can cause GERD may include:
+
+Being overweight
+Overeating
+Eating foods such as citrus, chocolate, and fatty or spicy foods
+Having caffeine
+Having alcohol
+Smoking
+Using aspirin and over-the-counter pain and fever medicines. These include nonsteroidal anti-inflammatory drugs (NSAIDs) such as ibuprofen and naproxen.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Cerebrovascular_Disease">
+        <rdfs:comment>Cerebrovascular disease refers to a group of conditions that affect blood flow and the blood vessels in the brain. Problems with blood flow may occur from blood vessels narrowing (stenosis), clot formation (thrombosis), artery blockage (embolism), or blood vessel rupture (hemorrhage).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Chest_Pain">
+        <rdfs:comment>Chest discomfort due to a heart attack or another heart problem may feel like: Pressure, fullness, burning or tightness in the chest. Crushing or searing pain that spreads to the back, neck, jaw, shoulders, and one or both arms.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Chest_Radiograph_Exam">
+        <rdfs:comment>A chest radiograph, commonly known as a chest X-ray, is a radiographic examination of the chest used to diagnose conditions affecting the chest, its contents, and nearby structures. This guide outlines the process of performing a chest radiograph examination, from preparation to interpretation</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Chest_X-ray_Exam">
+        <rdfs:comment>A chest X-ray is an imaging test that uses X-rays to look at the structures and organs in your chest. It can help your healthcare provider see how well your lungs and heart are working. Certain heart problems can cause changes in your lungs. Certain diseases can cause changes in the structure of the heart or lungs.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Chronic_Disease">
+        <rdfs:comment>A chronic condition (also known as chronic disease or chronic illness) is a health condition or disease that is persistent or otherwise long-lasting in its effects or a disease that comes with time. The term chronic is often applied when the course of the disease lasts for more than three months. Common chronic diseases include diabetes, functional gastrointestinal disorder, eczema, arthritis, asthma, chronic obstructive pulmonary disease, autoimmune diseases, genetic disorders and some viral diseases such as hepatitis C and acquired immunodeficiency syndrome. An illness which is lifelong because it ends in death is a terminal illness.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Complete_Blood_Count_Test">
+        <rdfs:comment>A complete blood count, also known as a full blood count, is a set of medical laboratory tests that provide information about the cells in a person&apos;s blood. The CBC indicates the counts of white blood cells, red blood cells and platelets, the concentration of hemoglobin, and the hematocrit.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Congenital_Heart_Disease">
+        <rdfs:comment>Coronary heart disease is the term that describes what happens when your heart&apos;s blood supply is blocked or interrupted by a build-up of fatty substances in the coronary arteries.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Coronary_Artery_Diseases">
+        <rdfs:comment>Coronary artery disease is caused by the buildup of fats, cholesterol and other substances in and on the walls of the heart arteries. This condition is called atherosclerosis. The buildup is called plaque. Plaque can cause the arteries to narrow, blocking blood flow.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Coughing_Wheezing">
+        <rdfs:comment>Cardiac asthma is not a form of asthma. It&apos;s a type of coughing or wheezing that occurs with left heart failure. Depending on how severe the symptoms are, this wheezing can be a medical emergency. Heart failure can cause fluid to build up in the lungs, a condition called pulmonary edema.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Creatine_Kinase_Test">
+        <rdfs:comment>reatine kinase (CK) is an enzyme that’s found in your skeletal muscle, heart muscle and brain. When any of these tissues are damaged, they leak creatine kinase into your bloodstream. Elevated CK levels may indicate muscle injury or disease.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#D-dimer_Test">
+        <rdfs:comment>A D-dimer test is a blood test that checks for blood-clotting problems. It measures the amount of D-dimer, a protein your body makes to break down blood clots. A positive test means the D-dimer level in your body is higher than normal. It suggests you might have a blood clot or blood clotting problems.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Diabetes_Type">
+        <rdfs:comment>Diabetes is a disease in which your blood glucose, or blood sugar, levels are too high. Glucose comes from foods you eat. The cells of your body need glucose for energy. A hormone called insulin helps the glucose get into your cells.
+
+With type 1 diabetes, your body doesn&apos;t make insulin. With type 2 diabetes, your body doesn&apos;t make or use insulin well. Without enough insulin, glucose builds up in your blood and causes high blood sugar levels.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Diabetes_Types_II">
+        <rdfs:comment>Type 2 diabetes, formerly known as adult-onset diabetes, is a form of diabetes mellitus that is characterized by high blood sugar, insulin resistance, and relative lack of insulin. Common symptoms include increased thirst, frequent urination, fatigue and unexplained weight loss.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Diaphoresis_Exam">
+        <rdfs:comment>Diaphoresis usually causes your whole body to sweat instead of one part, such as your armpits or hands. The sweat is visible, soaking through your clothing or dripping off your body. Diaphoresis may affect you while you&apos;re sleeping, soaking your sheets in sweat. The condition usually doesn&apos;t start until adulthood.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Dysphagia">
+        <rdfs:comment>Dysphagia is the medical term for swallowing difficulties. Some people with dysphagia have problems swallowing certain foods or liquids, while others can&apos;t swallow at all. Other signs of dysphagia include: coughing or choking when eating or drinking. bringing food back up, sometimes through the nose.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Echocardiography_Exam">
+        <rdfs:comment>An echocardiogram is an ultrasound test that checks the structure and function of your heart. An echo can diagnose a range of conditions including cardiomyopathy and valve disease. There are several types of echo tests, including transthoracic and transesophageal.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Electrocardiogram_Exam">
+        <rdfs:comment>An electrocardiogram (ECG or EKG) is a test to record the electrical signals in the heart. It shows how the heart is beating. Sticky patches called electrodes are placed on the chest and sometimes on the arms or legs. Wires connect the patches to a computer, which prints or displays results.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Electrolytes_Test">
+        <rdfs:comment>An electrolyte panel, also known as a serum electrolyte test, is a blood test that measures levels of the body&apos;s main electrolytes: Sodium, which helps control the amount of fluid in your body. It also helps your nerves and muscles work properly. Chloride, which also helps control the amount of fluid in your body.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Endocarditis_Inflammation">
+        <rdfs:comment>Endocarditis is inflammation of the endocardium — the inner lining of the heart chambers and valves. Endocarditis is a rare but life-threatening disease. In endocarditis, clumps of bacteria or fungi from another part of your body get into your bloodstream and collect on the endocardium.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Eosinophilic_Myocarditis">
+        <rdfs:comment>Eosinophilic myocarditis is a type of inflammatory cardiomyopathy characterized by eosinophilic infiltration into myocardial tissue. The accurate myocarditis incidence rate is difficult to determine because of the clinical limitations of an endomyocardial biopsy.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Esophageal_Rupture">
+        <rdfs:comment>Some ruptures occur spontaneously, especially in people who have untreated eosinophilic esophagitis. An esophageal rupture allows air, stomach acid, and/or food to leave the esophagus, which causes severe inflammation in the chest (mediastinitis). Fluid may collect around the lungs, a condition called pleural effusion.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Fatigue">
+        <rdfs:comment>Fatigue describes a state of tiredness, exhaustion or loss of energy. Fatigue is sometimes associated with medical conditions including autoimmune disease, organ failure, chronic pain conditions, mood disorders, heart disease, infectious diseases, and post-infectious-disease states.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Feeling_Dizzy">
+        <rdfs:comment>Dizziness has many possible causes, including inner ear disturbance, motion sickness and medication effects. Sometimes it&apos;s caused by an underlying health condition, such as poor circulation, infection or injury. The way dizziness makes you feel and your triggers provide clues for possible causes.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Headache">
+        <rdfs:comment>A headache is pain or discomfort in the head or face area. Types of headaches include migraine, tension, and cluster. Headaches can be primary or secondary. If it is secondary, it is caused by another condition. Avoiding headache triggers is the best prevention.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Heart_Attack">
+        <rdfs:comment>A heart attack occurs when the flow of blood to the heart is severely reduced or blocked. The blockage is usually due to a buildup of fat, cholesterol and other substances in the heart (coronary) arteries. The fatty, cholesterol-containing deposits are called plaques. The process of plaque buildup is called atherosclerosis.
+
+Sometimes, a plaque can rupture and form a clot that blocks blood flow. A lack of blood flow can damage or destroy part of the heart muscle.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Heart_Failure">
+        <rdfs:comment>Heart failure occurs when the heart muscle doesn&apos;t pump blood as well as it should. Blood often backs up and causes fluid to build up in the lungs and in the legs. The fluid buildup can cause shortness of breath and swelling of the legs and feet. Poor blood flow may cause the skin to appear blue or gray.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Heartburn">
+        <rdfs:comment>Heartburn, also known as pyrosis, cardialgia or acid indigestion, is a burning sensation in the central chest or upper central abdomen. Heartburn is usually due to regurgitation of gastric acid into the esophagus. It is the major symptom of gastroesophageal reflux disease.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Hemorrhagic">
+        <rdfs:comment>Hemorrhage is the medical term for bleeding. It most often refers to excessive bleeding. Hemorrhagic diseases are caused by bleeding, or they result in bleeding (hemorrhaging). Related topics include: Primary thrombocythemia (hemorrhagic thrombocythemia)</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Hole_In_Heart">
+        <rdfs:comment>A ventricular septal defect (VSD) — sometimes referred to as a hole in the heart — is a type of congenital heart defect. In a VSD, there is an abnormal opening in the wall between the main pumping chambers of the heart (the ventricles). VSDs are the most common congenital heart defect.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Hypertension">
+        <rdfs:comment>Hypertension (high blood pressure) is when the pressure in your blood vessels is too high (140/90 mmHg or higher). It is common but can be serious if not treated. People with high blood pressure may not feel symptoms. The only way to know is to get your blood pressure checked.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Hypotension">
+        <rdfs:comment>Low blood pressure is a condition in which the force of the blood pushing against the artery walls is too low. It&apos;s also called hypotension. Blood pressure is measured in millimeters of mercury (mm Hg). In general, low blood pressure is a reading lower than 90/60 mm Hg.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Hypotension_Exam">
+        <rdfs:comment>Someone having a tilt table test begins by lying flat on a table. Straps hold the person in place. After lying flat for a while, the table is tilted to a position that mimics standing. The health care provider watches how the heart and the nervous system that controls it respond to the changes in position.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Inflammatory_Cardiomegaly">
+        <rdfs:comment>when your heart is abnormally thick or overly stretched, becoming larger than usual, with difficulty pumping blood. The condition can be temporary or permanent. However, cardiomegaly is manageable, and most people can continue their normal activities of daily living.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Inflammatory_Heart_Disease">
+        <rdfs:comment>The inflammation of the heart muscles, such as myocarditis, the membrane sac which surrounds the heart called as pericarditis, and the inner lining of the heart or the myocardium, heart muscle as endocarditis are known as the inflammatory heart diseases.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Lack_of_Appetite">
+        <rdfs:comment>A loss of appetite is a symptom that can have many causes. This occurs when you don’t feel hungry. The medical term for a loss of appetite is anorexia. This is different from the eating disorder anorexia nervosa. Identifying and treating the underlying cause of a loss of appetite will help you feel better.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Liver_Enzymes_Test">
+        <rdfs:comment>Liver function tests are blood tests used to help find the cause of your symptoms and monitor liver disease or damage. The tests measure the levels of certain enzymes and proteins in your blood.
+
+Some of these tests measure how well the liver is performing its regular functions of producing protein and clearing bilirubin, a blood waste product. Other liver function tests measure enzymes that liver cells release in response to damage or disease.
+
+Irregular liver function test results don&apos;t always mean liver disease. A member of your health care team will typically explain your results and what they mean.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#MRI_Scanning_Exam">
+        <rdfs:comment>Magnetic resonance imaging (MRI) is a medical imaging technique that uses a magnetic field and computer-generated radio waves to create detailed images of the organs and tissues in your body.
+
+Most MRI machines are large, tube-shaped magnets. When you lie inside an MRI machine, the magnetic field inside works with radio waves and hydrogen atoms in your body to create cross-sectional images — like slices in a loaf of bread.
+
+The MRI machine also can produce 3D images that can be viewed from different angles.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Myocarditis">
+        <rdfs:comment>Myocarditis is inflammation of the heart muscle, called the myocardium. The condition can reduce the heart&apos;s ability to pump blood. Myocarditis can cause chest pain, shortness of breath, and rapid or irregular heartbeats.
+
+Infection with a virus is one cause of myocarditis. Sometimes myocarditis is caused by a medicine reaction or a condition that causes inflammation throughout the body.
+
+Severe myocarditis weakens the heart so that the rest of the body doesn&apos;t get enough blood. Clots can form in the heart, leading to a stroke or heart attack.
+
+Treatment for myocarditis may include medicines, procedures or surgeries.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Nausea">
+        <rdfs:comment>Nausea is an uncomfortable feeling in the back of your throat or an uneasiness in your stomach. You may also feel dizzy, lightheaded or have difficulty swallowing. Nausea often goes along with the urge to vomit but doesn&apos;t always lead to vomiting.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Nose_Bleed">
+        <rdfs:comment>Nosebleeds may be caused by infection, injury, allergic reaction, nose picking or an object being pushed into the nostril. Another name for nosebleed is epistaxis. Bleeding from the nose is common in children and is usually not serious. Seek medical attention if nosebleeds are severe, frequent or prolonged.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Odynophagia">
+        <rdfs:comment>Odynophagia is pain when swallowing. The pain may be felt in the mouth or throat and can occur with or without difficulty swallowing. The pain may be described as an ache, burning sensation, or occasionally a stabbing pain that radiates to the back. Odynophagia often results in inadvertent weight loss.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Panic_Attack">
+        <rdfs:comment>A panic attack is a brief episode of intense anxiety, which causes the physical sensations of fear. These can include a racing heartbeat, shortness of breath, dizziness, trembling and muscle tension. Panic attacks occur frequently and unexpectedly and are often not related to any external threat.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Peripheral_Artery_Disease">
+        <rdfs:comment>Peripheral artery disease is similar to coronary artery disease. Peripheral artery disease, or PAD, is a narrowing of the peripheral arteries that carry blood away from the heart to other parts of the body. The most common type is lower-extremity PAD, in which blood flow is reduced to the legs and feet.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Pulmonary_Embolism">
+        <rdfs:comment>A pulmonary embolism (PE) occurs when a blood clot gets stuck in an artery in the lung, blocking blood flow to part of the lung. Blood clots most often start in the legs and travel up through the right side of the heart and into the lungs. This is called deep vein thrombosis (DVT).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Renal_Artery_Stenosis">
+        <rdfs:comment>In renal artery stenosis, one or both of the arteries leading to the kidneys becomes narrowed, preventing adequate blood flow to the kidneys. Renal artery stenosis is the narrowing of one or more arteries that carry blood to your kidneys (renal arteries).</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Respiratory_Distress">
+        <rdfs:comment>Infant respiratory distress syndrome, also known as surfactant deficiency disorder, and previously called hyaline membrane disease, is a syndrome in premature infants caused by developmental insufficiency of pulmonary surfactant production and structural immaturity in the lungs.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Rheumatic_Heart_Disease">
+        <rdfs:comment>Rheumatic fever (RF) is an inflammatory disease that can involve the heart, joints, skin, and brain. The disease typically develops two to four weeks after a streptococcal throat infection. Signs and symptoms include fever, multiple painful joints, involuntary muscle movements, and occasionally a characteristic non-itchy rash known as erythema marginatum. The heart is involved in about half of the cases. Damage to the heart valves, known as rheumatic heart disease (RHD), usually occurs after repeated attacks but can sometimes occur after one. The damaged valves may result in heart failure, atrial fibrillation and infection of the valves.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Serum_Lipase_Test">
+        <rdfs:comment>Lipase is a type of digestive enzyme or &quot;digestive juice.&quot; It helps your body digest fats. Most of your lipase is made in your pancreas, an organ located behind the lower part of your stomach. Lipase is also made in your salivary (spit) glands and in your stomach.
+
+It&apos;s normal to have a small amount of lipase in your blood. But if the cells of your pancreas are damaged, they will release larger amounts of lipase. So high levels of lipase in your blood may mean you have pancreatitis, (an inflamed, swollen pancreas) or another type of pancreatic disease. A lipase tests can help diagnose these conditions and others.
+
+Other names: serum lipase, lipase, LPS.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Shortness_of_Breath">
+        <rdfs:comment>Dyspnea, or shortness of breath, is the feeling that you can&apos;t get enough air into your lungs. It might feel like your chest is tight, you&apos;re gasping for air or you&apos;re working harder to breathe. Heart and lung conditions are common causes of dyspnea</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Stroke">
+        <rdfs:comment>A stroke, sometimes called a brain attack, occurs when something blocks blood supply to part of the brain or when a blood vessel in the brain bursts. In either case, parts of the brain become damaged or die. A stroke can cause lasting brain damage, long-term disability, or even death.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Swollen_Limbs">
+        <rdfs:comment>Swollen limbs can be a symptom of various medical conditions and can affect one or both of the legs, arms, or other parts of the body. The underlying causes can range from relatively benign conditions to serious medical issues.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Tension_Pneumothorax">
+        <rdfs:comment>Tension pneumothorax is a life-threatening emergency wherein a large air collection in the pleural space compromises respiration and cardiac function. This condition can arise from events like trauma or aggressive mechanical ventilation or resuscitation.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Third_Heart_Sound_Exam">
+        <rdfs:comment>The third heart sound tests the ausculatory skills of the examiner because it is often the most difficult heart sound to hear. This is caused by several factors: The sound is usually of very low intensity and is easily obscured by extraneous room sounds, lung or abdominal noise, or tightening of the chest wall muscles.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Thoracic_Aortic_Dissection">
+        <rdfs:comment>An aortic dissection is a serious condition in which a tear occurs in the inner layer of the body&apos;s main artery (aorta). Blood rushes through the tear, causing the inner and middle layers of the aorta to split (dissect). If the blood goes through the outside aortic wall, aortic dissection is often deadly.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Thromboembolic_Disease">
+        <rdfs:comment>Venous thromboembolism (VTE) is a condition that occurs when a blood clot forms in a vein. VTE includes deep vein thrombosis (DVT) and pulmonary embolism (PE). DVT occurs when a blood clot forms in a deep veins , usually in the lower leg, thigh, or pelvis.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Troponin_I_or_T_Test">
+        <rdfs:comment>An increase in troponin I (cTnI) is only seen in myocardial injury. Hence, cTnI is the most cardiac-specific biomarker. Troponin T (cTnT) is cardiac specific but the cTnT assays also detect proteins released from skeletal muscle. Consequently, skeletal muscle damage or inflammation may result in elevated cTnT levels.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Valvular_Heart_Disease">
+        <rdfs:comment>Heart valve disease occurs when one or more of the heart valves do not open or close properly. When it affects more than one heart valve, it is called multiple valvular heart disease. Stenosis is when the valve opening becomes narrow and restricts blood flow.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Venous_Thrombosis">
+        <rdfs:comment>Venous thromboembolism (VTE) is a condition that occurs when a blood clot forms in a vein. VTE includes deep vein thrombosis (DVT) and pulmonary embolism (PE). DVT occurs when a blood clot forms in a deep veins , usually in the lower leg, thigh, or pelvis.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/abid/ontologies/2023/7/CardiovascularDiseaseOntology#Weight_Gain">
+        <rdfs:comment>Weight gain is an increase in body weight. This can involve an increase in muscle mass, fat deposits, excess fluids such as water or other factors. Weight gain can be a symptom of a serious medical condition.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

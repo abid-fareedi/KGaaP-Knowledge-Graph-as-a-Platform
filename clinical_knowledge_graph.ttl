@@ -1,0 +1,341 @@
+@prefix : <http://example.org/health#> .
+@prefix ex: <http://example.org/health#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://example.org/health#> .
+
+<http://example.org/health#> rdf:type owl:Ontology ;
+                              owl:versionIRI <http://example.org/health#> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://example.org/health#diagnosedWith
+ex:diagnosedWith rdf:type owl:ObjectProperty ;
+                 rdfs:domain ex:Person ;
+                 rdfs:range ex:MedicalCondition .
+
+
+###  http://example.org/health#hasDoctorNote
+ex:hasDoctorNote rdf:type owl:ObjectProperty ;
+                 rdfs:domain ex:Person ;
+                 rdfs:range ex:DoctorNote .
+
+
+###  http://example.org/health#hasFamilyHistory
+ex:hasFamilyHistory rdf:type owl:ObjectProperty ;
+                    rdfs:domain ex:Person ;
+                    rdfs:range ex:MedicalCondition .
+
+
+###  http://example.org/health#hasSocialHistory
+ex:hasSocialHistory rdf:type owl:ObjectProperty ;
+                    rdfs:domain ex:Person ;
+                    rdfs:range ex:LifestyleFactor .
+
+
+###  http://example.org/health#hasTreatmentPlan
+ex:hasTreatmentPlan rdf:type owl:ObjectProperty ;
+                    rdfs:domain ex:Person ;
+                    rdfs:range ex:TreatmentPlan .
+
+
+###  http://example.org/health#hasVitalSign
+ex:hasVitalSign rdf:type owl:ObjectProperty ;
+                rdfs:domain ex:Person ;
+                rdfs:range ex:VitalSigns .
+
+
+###  http://example.org/health#monitoredBy
+ex:monitoredBy rdf:type owl:ObjectProperty ;
+               rdfs:domain ex:Person ;
+               rdfs:range ex:DoctorNote .
+
+
+###  http://example.org/health#prescribedMedication
+ex:prescribedMedication rdf:type owl:ObjectProperty ;
+                        rdfs:domain ex:Person ;
+                        rdfs:range ex:Medication .
+
+
+###  http://example.org/health#requiresFollowUp
+ex:requiresFollowUp rdf:type owl:ObjectProperty ;
+                    rdfs:domain ex:Person ;
+                    rdfs:range ex:TreatmentPlan .
+
+
+###  http://example.org/health#underwentTest
+ex:underwentTest rdf:type owl:ObjectProperty ;
+                 rdfs:domain ex:Person ;
+                 rdfs:range ex:DiagnosticTest .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://example.org/health#HDLLevel
+ex:HDLLevel rdf:type owl:DatatypeProperty ;
+            rdfs:domain ex:DiagnosticTest ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#HbA1cLevel
+ex:HbA1cLevel rdf:type owl:DatatypeProperty ;
+              rdfs:domain ex:DiagnosticTest ;
+              rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#LDLLevel
+ex:LDLLevel rdf:type owl:DatatypeProperty ;
+            rdfs:domain ex:DiagnosticTest ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#TriglycerideLevel
+ex:TriglycerideLevel rdf:type owl:DatatypeProperty ;
+                     rdfs:domain ex:DiagnosticTest ;
+                     rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#TroponinTestResult
+ex:TroponinTestResult rdf:type owl:DatatypeProperty ;
+                      rdfs:domain ex:DiagnosticTest ;
+                      rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#alcoholConsumption
+ex:alcoholConsumption rdf:type owl:DatatypeProperty ;
+                      rdfs:domain ex:LifestyleFactor ;
+                      rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#bloodPressure
+ex:bloodPressure rdf:type owl:DatatypeProperty ;
+                 rdfs:domain ex:VitalSigns ;
+                 rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#dietType
+ex:dietType rdf:type owl:DatatypeProperty ;
+            rdfs:domain ex:LifestyleFactor ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#dosage
+ex:dosage rdf:type owl:DatatypeProperty ;
+          rdfs:domain ex:Medication ;
+          rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#exerciseHabit
+ex:exerciseHabit rdf:type owl:DatatypeProperty ;
+                 rdfs:domain ex:LifestyleFactor ;
+                 rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#frequency
+ex:frequency rdf:type owl:DatatypeProperty ;
+             rdfs:domain ex:Medication ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#heartRate
+ex:heartRate rdf:type owl:DatatypeProperty ;
+             rdfs:domain ex:VitalSigns ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#respiratoryRate
+ex:respiratoryRate rdf:type owl:DatatypeProperty ;
+                   rdfs:domain ex:VitalSigns ;
+                   rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#smokingStatus
+ex:smokingStatus rdf:type owl:DatatypeProperty ;
+                 rdfs:domain ex:LifestyleFactor ;
+                 rdfs:range rdfs:Literal .
+
+
+###  http://example.org/health#temperature
+ex:temperature rdf:type owl:DatatypeProperty ;
+               rdfs:domain ex:VitalSigns ;
+               rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://example.org/health#DiagnosticTest
+ex:DiagnosticTest rdf:type owl:Class .
+
+
+###  http://example.org/health#DoctorNote
+ex:DoctorNote rdf:type owl:Class .
+
+
+###  http://example.org/health#LifestyleFactor
+ex:LifestyleFactor rdf:type owl:Class .
+
+
+###  http://example.org/health#MedicalCondition
+ex:MedicalCondition rdf:type owl:Class .
+
+
+###  http://example.org/health#Medication
+ex:Medication rdf:type owl:Class .
+
+
+###  http://example.org/health#Person
+ex:Person rdf:type owl:Class .
+
+
+###  http://example.org/health#TreatmentPlan
+ex:TreatmentPlan rdf:type owl:Class .
+
+
+###  http://example.org/health#VitalSigns
+ex:VitalSigns rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/health#AlcoholConsumption
+ex:AlcoholConsumption rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/health#Atorvastatin
+ex:Atorvastatin rdf:type owl:NamedIndividual ;
+                ex:dosage "80mg" ;
+                ex:frequency "daily" .
+
+
+###  http://example.org/health#CAD
+ex:CAD rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/health#Diabetes
+ex:Diabetes rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/health#Diet
+ex:Diet rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/health#DoctorNote
+ex:DoctorNote rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/health#ECG
+ex:ECG rdf:type owl:NamedIndividual ;
+       ex:TroponinTestResult "Negative" .
+
+
+###  http://example.org/health#Echocardiogram
+ex:Echocardiogram rdf:type owl:NamedIndividual ;
+                  ex:HDLLevel 38 ;
+                  ex:HbA1cLevel "7.2"^^xsd:double ;
+                  ex:LDLLevel 140 ;
+                  ex:TriglycerideLevel 180 .
+
+
+###  http://example.org/health#Exercise
+ex:Exercise rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/health#FollowUpPlan
+ex:FollowUpPlan rdf:type owl:NamedIndividual ;
+                ex:dosage "Review ECG, lipid panel in 2 weeks" .
+
+
+###  http://example.org/health#Hypertension
+ex:Hypertension rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/health#IsosorbideMononitrate
+ex:IsosorbideMononitrate rdf:type owl:NamedIndividual ;
+                         ex:dosage "10mg" ;
+                         ex:frequency "BID" .
+
+
+###  http://example.org/health#LifestyleModifications
+ex:LifestyleModifications rdf:type owl:NamedIndividual ;
+                          ex:dietType "Low sodium, heart-healthy diet" ;
+                          ex:exerciseHabit "30 min/day light exercise" .
+
+
+###  http://example.org/health#Metformin
+ex:Metformin rdf:type owl:NamedIndividual ;
+             ex:dosage "1500mg" ;
+             ex:frequency "BID" .
+
+
+###  http://example.org/health#Patient1
+ex:Patient1 rdf:type owl:NamedIndividual ,
+                     ex:Person ;
+            ex:diagnosedWith ex:Diabetes ,
+                             ex:Hypertension ,
+                             ex:StableAngina ;
+            ex:hasDoctorNote ex:DoctorNote ;
+            ex:hasFamilyHistory ex:CAD ,
+                                ex:Hypertension ,
+                                ex:Stroke ;
+            ex:hasSocialHistory ex:AlcoholConsumption ,
+                                ex:Diet ,
+                                ex:Exercise ,
+                                ex:Smoking ;
+            ex:hasTreatmentPlan ex:LifestyleModifications ;
+            ex:hasVitalSign ex:VitalSigns ;
+            ex:prescribedMedication ex:Atorvastatin ,
+                                    ex:IsosorbideMononitrate ,
+                                    ex:Metformin ;
+            ex:requiresFollowUp ex:FollowUpPlan ;
+            ex:underwentTest ex:ECG ,
+                             ex:Echocardiogram .
+
+
+###  http://example.org/health#Smoking
+ex:Smoking rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/health#StableAngina
+ex:StableAngina rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/health#Stroke
+ex:Stroke rdf:type owl:NamedIndividual .
+
+
+###  http://example.org/health#VitalSigns
+ex:VitalSigns rdf:type owl:NamedIndividual ;
+              ex:bloodPressure "148/92" ;
+              ex:heartRate 88 ;
+              ex:respiratoryRate 18 ;
+              ex:temperature "98.6"^^xsd:double .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+ex:DoctorNote dct:description "Monitor chest pain, medication adherence, possible PCI/CABG if symptoms progress." .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

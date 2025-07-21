@@ -11,3 +11,6 @@ Virtual Knowledge Graph (FVKG) to enable seamless, real-time data access using S
 proposed Knowledge-Graph-as-a-Platform (KGaaP) resolves semantic interoperability and supports 
 service-oriented healthcare applications through SPARQL-based federated querying, promoting dynamic, 
 scalable, and interoperable data ecosystems.
+
+Keywords: Federated semantic knowledge lake, Ontology-based data access, FedX, Federated virtual 
+knowledge graph, Knowledge graph as a platform

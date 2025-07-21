@@ -13,4 +13,4 @@ service-oriented healthcare applications through SPARQL-based federated querying
 scalable, and interoperable data ecosystems.
 
 Keywords: Federated semantic knowledge lake, Ontology-based data access, FedX, Federated virtual 
-knowledge graph, Knowledge graph as a platform
+knowledge graph, Knowledge graph as a platform. 
